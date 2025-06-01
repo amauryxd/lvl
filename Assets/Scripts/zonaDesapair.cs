@@ -6,6 +6,7 @@ public class zonaDesapair : MonoBehaviour
     public GameObject[] objetosxd;
     public GameObject camara1;
     public GameObject camara2;
+    public GameObject toactivate;
     Vector3 newPos;
     Vector3 velocity;
     bool oncepas = true;
@@ -38,6 +39,7 @@ public class zonaDesapair : MonoBehaviour
         yield return new WaitForSeconds(4);
         camara1.SetActive(false);
         camara2.SetActive(true);
+        toactivate.SetActive(true);
         yield return new WaitForSeconds(3);
         camara2.SetActive(false);
     }
